@@ -1,0 +1,9 @@
+.list-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-element > * {
+    margin-right: 2px;
+}

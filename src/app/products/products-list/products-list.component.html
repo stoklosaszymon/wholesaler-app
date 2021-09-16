@@ -1,0 +1,8 @@
+<div>
+  <div class="list-element" *ngFor="let p of productList">
+    <span>{{p.name}}</span>
+    <span>{{p.price}}</span>
+    <span>{{p.amount}}</span>
+    <button mat-button (click)="deleteProduct(p.id)">-</button>
+  </div>
+</div>

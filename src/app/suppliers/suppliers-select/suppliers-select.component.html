@@ -1,0 +1,8 @@
+<mat-form-field class="supplier-select"
+                appearance="legacy">
+  <mat-label>Supplier</mat-label>
+  <mat-select [(ngModel)]="selectedSupplier"
+              (ngModelChange)="onSupplierChange()">
+    <mat-option *ngFor="let supplier of supplierList" [value]="supplier.id">{{supplier.name}}</mat-option>
+  </mat-select>
+</mat-form-field>

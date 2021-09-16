@@ -1,0 +1,22 @@
+<div class="form-container">
+  <mat-form-field appearance="legacy">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="newProductRequest.name">
+  </mat-form-field>
+
+  <mat-form-field appearance="legacy">
+    <mat-label>Price</mat-label>
+    <input type="number" matInput [(ngModel)]="newProductRequest.price">
+  </mat-form-field>
+
+  <mat-form-field appearance="legacy">
+    <mat-label>Amount</mat-label>
+    <input type="number" matInput [(ngModel)]="newProductRequest.amount">
+  </mat-form-field>
+
+  <mat-checkbox [(ngModel)]="newProductRequest.isAvailable">Is available</mat-checkbox> 
+
+  <app-suppliers-select [(selectedSupplier)]="newProductRequest.supplier_id"></app-suppliers-select>
+
+  <button mat-button (click)="submitForm()">Dodaj</button>
+</div>
